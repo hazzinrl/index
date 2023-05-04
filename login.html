@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style> 
+				body {
+					margin:0; 
+					padding:0; 
+					background-image: url('background5.jfif');
+					background-repeat: no-repeat; 
+					background-attachment: fixed; 
+					background-size: 100% 100%; 
+				}
+				
+				section {
+					display: flex; 
+					justify-content: center; 
+					align-items: center; 
+					min-height: 100vh; 
+					width: 100%; 
+					font-family: Verdana;}
+				
+				.form-box {
+					position: relative; 
+					width: 400px; 
+					height:500px; 
+					background-color: transparent; 
+					border: 2px solid LemonChiffon; 
+					border-radius: 20px;
+					backdrop-filter: blur(15px); 
+					display: flex; 
+					justify-content: center; 
+					align-items: center; 
+				}
+				
+				h2{
+					font-size: 2em; 
+					text-align: center;
+					color: white; }
+				
+				.inputbox{
+					position: relative; 
+					margin: 30px 0; 
+					width: 310px; 
+					border-bottom: 2px solid White; }
+					
+				.inputbox label {
+					position: absolute; 
+					top: 50%; 
+					left: 5px; 
+					transform: translateY(-50%); 
+					color: White;
+					font-size: 1em; 
+					pointer-events: none; 
+					transition: 0.5s;}
+				
+				input:focus ~ label, 
+				input:valid ~ label {
+				top: -5px; 
+				}
+				
+				.inputbox input {
+					width: 100%; 
+					height: 50px; 
+					background: transparent; 
+					border: none; 
+					outline: none; 
+					font-size: 1em; 
+					padding: 0 35px 5px; 
+					color: White; }
+				
+				.inputbox i{
+					position: absolute; 
+					right: 8px; 
+					color: white; 
+					font-size: 1.2em; 
+					top: 20px; }
+					
+				.forget {
+					margin: -15px 0 15px; 
+					font-size: .9em; 
+					color: white; 
+					display: flex; 
+					justify-content: center;}
+				
+				.forget a {
+					color: white; 
+					text-decoration: none; }
+					
+				.forget a:hover{
+					text-decoration: none; 
+					color: Yellow;}
+				
+				.forget label input {
+					margin-right: 3px; }
+				
+				.forget label a{
+					color: white; 
+					text-decoration: none; }
+				
+				.forget label a:hover{
+					text-decoration: underline; }
+				
+				button {
+					width: 100%; 
+					height: 40px; 
+					border-radius: 40px; 
+					background: white; 
+					border: none; 
+					outline: none; 
+					cursor: pointer; 
+					font-size: 1em; 
+					font-weight: 500;
+					margin-top: 10px; }
+				
+				button a {
+					text-decoration: none;}
+				
+				.register {
+					font-size: 0.9em; 
+					color: white; 
+					text-align: center;
+					margin: 25px 0 10px; }
+					
+				.register p a{ 
+					text-decoration: none; 
+					color: white; 
+					font-weight: 600; }
+				
+				.register p a:hover{
+					text-decoration: underline; }
+					
+					
+				
+				
+		</style>
+		<title> Login </title>
+	</head>
+	<body style="background-color: LightCyan">
+	<section>
+		<div class="form-box">
+			<div class="form-value">
+				<form action=" ">
+					<h2> Login </h2>
+					<div class="inputbox">
+						<i class="fa fa-user"></i>
+						<input type="id" required>
+						<label for=" "> ID </label>
+					</div>
+					<div class="inputbox">
+						<i class="fa fa-lock"></i>
+						<input type="password" required>
+						<label for=" ">Password</label>
+					</div>
+					<div class="forget">
+						<label for=""><input type="checkbox">Remember Me</label>
+						<a href="#">&nbsp;&nbsp;Forget Password</a>
+					</div>
+					<button>Log in</button>
+					<button>Cancel</button>
+					<button><a href="index.html">Back</a></button>
+					<div class="register">
+						<p> Don't have an acount? <a href="SignUp.html">Register</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html> 

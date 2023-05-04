@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<style>
+				body {
+					margin:0; 
+					padding:0; 
+					box-sizing: border-box; 
+					background-image: url('background1.jpg');
+					background-repeat: no-repeat; 
+					background-attachment: fixed; 
+					background-size: 100% 100%; 
+				}
+				
+				nav {
+					width: 100%;
+					background: #4682B4; 
+					overflow: auto;
+				}
+				
+				.menu ul{
+					list-style:none;
+					padding:0; 
+					margin:0 0 0 150px; 
+					text-align: right; 
+				}
+				
+				.menu li {
+					display: inline-block; 
+				}
+				
+				.logo img{
+					position: absolute; 
+					margin-top: 8px;
+					margin-left: 30px;
+				}
+				
+				nav a{
+					text-decoration: none; 
+					color: White; 
+					width: 90px; 
+					display: block;
+					padding: 20px 15px; 
+					text-transform: uppercase; 
+					font-weight: bold;
+					font-family: Arial; 
+					text-align: center;
+					font-size: 14px; 
+				}
+				
+				nav a:hover {
+					background: #ADD8E6; 
+					color: Black; 
+					transition: 0.6s; 
+				}
+				
+				<!-- gallery1 section -->
+				.galleries {
+					padding-top: 6px; ; 
+					}
+	
+				.album {
+					width: 340px;
+					height: 455px;
+					border-radius: 2px; 
+					box-shadow: 0 20px 40px MidnightBlue;
+					position: absolute;
+					z-index: 10; 
+					outline-offset: 5px; 
+					transition: all 0.2s; }
+				
+				.header h1 {
+					font-family: baskerville, serif, bold; 
+					font-size: 32px; 
+					text-align: center; 
+					padding-top: 20px; 
+					padding-bottom: 10px; 
+					letter-spacing: 5px; 
+					text-transform: uppercase; }
+				
+				.header h2 {
+					font-family: baskerville, serif, bold; 
+					font-size: 25px; 
+					text-align: center; 
+					padding-top: 20px; 
+					padding-bottom: 10px; 
+					letter-spacing: 5px; 
+					text-transform: uppercase; }
+				
+				.gallery {
+					width: 1000px; 
+					margin: 0 auto; 
+					padding: 80px; 
+					position: relative; }
+					
+				.gambar5 {
+					top: 0;
+					left: 0; 
+					z-index: 1;
+					}
+				
+				.gambar4 {
+					top: 0; 
+					right: 0;
+					z-index: 1;}
+				
+				.gambar3 {
+					top: 40px; 
+					left: 15%;
+					z-index: 2;}
+				
+				.neobong {
+					top: 60px; 
+					left: 35%; 
+					}
+					
+				.gambar2 {
+					top: 40px; 
+					left: 55%;
+					z-index: 2; 
+					}
+				
+				.album:hover {
+					outline: 5px solid LightCyan;
+					transform: scale(1.05) translateY (-20px); 
+					z-index: 20; }
+				
+				.gallery:hover .album:not(:hover) {
+					transform: scale(0.9); }
+				
+				<!-- gallery2 section-->
+				
+				.galleries2 {
+					padding-top: 100px; }
+					
+				.album2 {
+					width: 340px;
+					height: 455px;
+					border-radius: 2px; 
+					box-shadow: 0 20px 40px MidnightBlue;
+					position: absolute;
+					z-index: 10; 
+					outline-offset: 5px; 
+					transition: all 0.2s; }
+				
+				.gallery2 {
+					width: 1000px; 
+					margin: 450px auto;
+					padding: 80px; 
+					position: relative; }
+					
+				.gambar10 {
+					top: 0;
+					left: 0; 
+					z-index: 1;}
+				
+				.gambar9 {
+					top: 0; 
+					right: 0;
+					z-index: 1;}
+				
+				.gambar8 {
+					top: 40px; 
+					left: 15%;
+					z-index: 2;}
+				
+				.gambar6 {
+					top: 60px; 
+					left: 35%; }
+					
+				.gambar7 {
+					top: 40px; 
+					left: 55%;
+					z-index: 2; }
+				
+				.album2:hover {
+					outline: 5px solid LightCyan;
+					transform: scale(1.05) translateY (-20px); 
+					z-index: 20; }
+				
+				.gallery2:hover .album2:not(:hover) {
+					transform: scale(0.9); }
+				
+				<!-- gallery3 section -->
+				
+				.galleries3{
+					padding-top: 100px; }
+					
+				.album3 {
+					width: 500px;
+					height: 350px;
+					border-radius: 2px; 
+					box-shadow: 0 20px 40px MidnightBlue;
+					position: absolute;
+					z-index: 10; 
+					outline-offset: 5px; 
+					transition: all 0.2s; }
+				
+				.gallery3 {
+					width: 1000px; 
+					margin: 450px auto;
+					padding: 30px; 
+					position: relative; }
+					
+				.gambar15 {
+					top: 0;
+					left: 0; 
+					z-index: 1;}
+				
+				.gambar14 {
+					top: 0; 
+					right: 0; 
+					z-index: 1;} 
+				
+				.gambar13 {
+					top: 50px; 
+					left: 5%;
+					z-index: 2;}
+				
+				.gambar11 {
+					top: 70px; 
+					left: 27%; }
+					
+				.gambar12 {
+					top: 50px; 
+					left: 50%;
+					z-index: 2; }
+				
+				.album3:hover {
+					outline: 5px solid LightCyan;
+					transform: scale(1.05) translateY (-20px); 
+					z-index: 20; }
+				
+				.gallery3:hover .album3:not(:hover) {
+					transform: scale(0.9); }
+					
+		</style>
+		<title>Galleries </title>
+	</head>
+	<body style="background-color: LightCyan">
+	<div class ="logo"><a href ="index.html"><img src="image/logo3.png" height="40" width="150" alt="logo"></a>
+	</div>
+	<nav>
+		<div class="menu">
+		<ul>
+			<li><a href="index.html">Home </a></li>
+			<li><a href="biography.html">Biography </a></li>
+			<li><a href="resume.html">Resume </a></li>
+			<li><a href="galleries.html">Galleries </a></li>
+			<li><a href="time table.html">Time Table </a></li>
+		</ul>
+		</div>
+	</nav>
+	<section class="header">
+		<h1>Izzah's memory lane</h1>
+		<h2> Photos </h2>
+	</section>
+	<section class="galleries">
+		<div class="gallery"> 
+			<img src="image/photo3.jpg" alt="photo-3" class="album gambar5">
+			<img src="image/photo4.jpg" alt="photo-4" class="album gambar4">
+			<img src="image/photo5.jpg" alt="photo-5" class="album gambar3">
+			<img src="image/photo2.jpg" alt="photo-2" class="album gambar2">
+			<img src="image/photo1.jpg" alt="photo-1" class="album neobong">
+		</div>
+	</section>
+	<section class="galleries2">
+		<div class="gallery2"> 
+			<img src="image/photo10.jpg" alt="photo-10" class="album2 gambar10">
+			<img src="image/photo9.jpg" alt="photo-9" class="album2 gambar9">
+			<img src="image/photo8.jpg" alt="photo-8" class="album2 gambar8">
+			<img src="image/photo7.jpg" alt="photo-7" class="album2 gambar7">
+			<img src="image/photo6.jpg" alt="photo-6" class="album2 gambar6">
+		</div>
+	</section>
+	<section class="galleries3">
+		<div class="gallery3"> 
+			<img src="image/photo15.jpg" alt="photo-15" class="album3 gambar15">
+			<img src="image/photo14.jpg" alt="photo-14" class="album3 gambar14">
+			<img src="image/photo13.jpg" alt="photo-13" class="album3 gambar13">
+			<img src="image/photo12.jpg" alt="photo-12" class="album3 gambar12">
+			<img src="image/photo11.jpg" alt="photo-11" class="album3 gambar11">
+		</div>
+	</section>
+	
+	<section class="video" style="text-align:center">
+		<h2 style="text-align: center; letter-spacing: 5px"> VIDEOS</h2>
+		<video width="340" height="420" controls> 
+			<source src="videos/video1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video width="340" height="420" controls> 
+			<source src="videos/video2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video width="340" height="420" controls> 
+			<source src="videos/video3.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video width="340" height="420" controls> 
+			<source src="videos/video4.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video width="340" height="420" controls> 
+			<source src="videos/video5.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video width="340" height="420" controls> 
+			<source src="videos/video6.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</section>
+	
+	<br/>
+	<br/>
+	<br/>
+	
+	<section class="music">
+	<table style="float:center; text-align: center; margin-left: auto; 
+		margin-right:auto; color: MidnightBlue; font-family:Verdana;">
+		<thead>
+			<h2 style="text-align: center; letter-spacing: 5px"> FAVOURITE MUSIC </h2>
+		</thead>
+		<tr>
+			<th >
+			<img src="image/album1.jpg" alt="Jelly Pop" width="200" height="200px">
+			<p> Jelly Pop </p>
+			<p> BOYS PLANET</p> 
+			<audio class="song" controls>
+			<source src="song/Jelly Pop.mp3" type="audio/mpeg">
+			</audio></th>
+			
+			<th>
+			<img src="image/album2.jpg" alt="Last Romeo" width="200" height="200px">
+			<p> Last Romeo </p>
+			<p> INFINITE</p> 
+			<audio class="song" controls>
+			<source src="song/Infinite-LastRomeo.mp3" type="audio/mpeg">
+			</audio></th>
+			
+			<th>
+			<img src="image/album3.jpg" alt="insane" width="200" height="200px"/> 
+			<p> Insane </p>
+			<p> BTOB </p> 
+			<audio class="song" controls>
+			<source src="song/BTOB - Insane.mp3" type="audio/mpeg">
+			</audio></th>
+		</tr>
+			<td>
+			<img src="image/album4.jpg" alt="cravity" width="200" height="200px"/> 
+			<p> A to Z </p>
+			<p> CRAVITY </p> 
+			<audio class="song" controls>
+			<source src="song/A to Z.mp3" type="audio/mpeg">
+			</audio></td>
+			
+			<td>
+			<img src="image/album5.png" alt="designer" width="200" height="200px"/> 
+			<p> Designer </p>
+			<p> NCT127 </p> 
+			<audio class="song" controls>
+			<source src="song/NCT127-Designer.mp3" type="audio/mpeg">
+			</audio></td>
+			
+			<td>
+			<img src="image/album6.jfif" alt="itzy" width="200" height="200px"/> 
+			<p> Not Shy</p>
+			<p> ITZY </p> 
+			<audio class="song" controls>
+			<source src="song/Itzy.mp3" type="audio/mpeg">
+			</audio></td>
+		</table>
+	</section>
+	<footer>
+		<p style="text-align:center; font-style:italic;"> Created by Nurul Izzah. <span>&copy;2023. <br> All rights reserved.<span></p>
+	</footer>
+	</body>
+</html> 

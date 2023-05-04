@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style> 
+				body {
+					margin:0; 
+					padding:0; 
+					background-image: url('background1.jpg');
+					background-repeat: no-repeat; 
+					background-attachment: fixed; 
+					background-size: 100% 100%; 
+				}
+				
+				nav {
+					width: 100%;
+					background: #4682B4; 
+					overflow: auto;
+				}
+				
+				.menu ul{
+					list-style:none;
+					padding:0; 
+					margin:0 0 0 150px; 
+					text-align: right; 
+				}
+				
+				.menu li {
+					display: inline-block; 
+				}
+				
+				.logo img{
+					position: absolute; 
+					margin-top: 8px;
+					margin-left: 30px;
+				}
+				
+				nav a{
+					text-decoration: none; 
+					color: White; 
+					width: 90px; 
+					display: block;
+					padding: 20px 15px; 
+					text-transform: uppercase; 
+					font-weight: bold;
+					font-family: Arial; 
+					text-align: center;
+					font-size: 14px; 
+				}
+				
+				nav a:hover {
+					background: #ADD8E6; 
+					color: Black; 
+					transition: 0.6s; 
+				}
+				
+				.home {
+					height: 100vh; 
+					display: flex; 
+					align-items: center; 
+					padding: 0 10%; } 
+				
+				.home-content {
+					max-width: 600px; }
+				
+				.home-content h1 {
+					font-family: baskerville, serif, bold;
+					font-size:56px; 
+					font-weight: 700; 
+					margin: 10px 0 10px;
+				 }
+				
+				.home-content h3 {
+					font-family: baskerville, serif;
+					font-size: 32px; 
+					font-weight: 700;
+					margin: 10px 0 10px;
+				}
+				
+				.home-content p{
+					font-family: baskerville, serif; 
+					font-size: 17px;
+					margin: 10px 0 20px; }
+				
+				.home-content social{
+					font-family: baskerville, serif; 
+					font-size: 20px; 
+					margin: 10px 0 10px;}
+					
+				.home-content .btn-box {
+					display: flex; 
+					justify-content: space-between; 
+					width: 250px; 
+					height: 50px; }
+				
+				.btn-box a {
+					position: relative; 
+					display: inline-flex;
+					justify-content: center; 
+					align-items: center; 
+					width: 100px; 
+					height: 60%; 
+					background-color: #4682B4; 
+					border: 2px solid #4682B4; 
+					border-radius: 8px; 
+					font-size: 16px; 
+					color: #F5F5F5;
+					text-decoration: none; 
+					font-weight: 600; 
+					letter-spacing: 1px;
+				} 
+				
+				.btn-box a:hover {
+					background: #ADD8E6; 
+					color: Black; 
+					transition: 0.6s;
+				}
+				
+				.images3 {
+					width: 35%; 
+					height: 70%; 
+					position: absolute; 
+					bottom: 0; 
+					right: 0;
+				}
+				
+				.images3 img {
+					height:120%; 
+					position: absolute; 
+					left: 30%;
+					bottom: 0;
+					transform: translateX(-50%); 
+					transition: bottom 1s, left 1s; 
+				}
+				
+				.images3:hover  .back5 {
+					bottom:40px; 
+				}
+				
+				.images3:hover .girl5 {
+					left:45%; 
+				}
+				
+				.fa {
+					padding: 20px; 
+					font-size:30px; 
+					text-align: left; 
+					text-decoration: none; 
+					margin-top: 3px;
+					padding-top: 2px; 
+					padding-left: 0px; 
+					border-radius: 50%; }
+					
+				.fa:hover {
+					opacity: 0.7; }
+				
+			
+			
+		</style>
+		<title> Welcome to My Personal Website </title>
+	</head>
+	<body style="background-image: url('background1.jpg');">
+	<div class ="logo"><a href ="index.html"><img src="image/logo3.png" height="40" width="150" alt="logo"></a>
+	</div>
+	<nav>
+		<div class="menu">
+		<ul>
+			<li><a href="index.html">Home </a></li>
+			<li><a href="biography.html">Biography </a></li>
+			<li><a href="resume.html">Resume </a></li>
+			<li><a href="galleries.html">Galleries </a></li>
+			<li><a href="time table.html">Time Table </a></li>
+		</ul>
+		</div>
+	</nav>
+	<section class="home">
+		<div class="home-content">
+			<h1> Hi, I'm Nurul Izzah!</h1>
+			<h3> Welcome to my personal website.</h3>
+			<p style="font-style: italic"> Those stars that shine when the night falls. <br>
+				That sun that only leaves behind the sunset glow <br>
+				Thеy all have their unique colors <br>
+				Bеautiful, beautiful, yeah <br>
+				Why is it that, when everything in the world takes its right place <br>
+				It shines more beautifully?<br>
+				You are enough just the way you are<br>
+				Beautiful, beautiful you are - <b> NCT2021, Beautiful.</b> </p>
+			<div class="btn-box">
+				<a href="login.html">Login</a>
+				<a href="SignUp.html">Sign Up</a>
+			</div>
+			
+			<div class="images3">
+				<img src="image/back.png" class="back5">
+				<img src="image/izzah3.png" class="girl5">
+			</div>
+
+			<br/>
+		
+			<div class="social">
+				<p>Visit My Official Account:</p>
+				<a href="https://www.facebook.com/izzhshi" class="fa fa-facebook"></a>
+				<a href="https://www.youtube.com/channel/UCXVX_tJulw82wSTo7zCl4vw" class="fa fa-youtube"></a>
+				<a href="https://www.instagram.com/izzhshi/" class="fa fa-instagram"></a>
+			</div>
+			</div>
+	</section> 
+	<footer>
+		<p style="text-align:center; font-style:italic;"> Created by Nurul Izzah. <span>&copy;2023. <br> All rights reserved.<span></p>
+	</footer>
+	</body>
+</html> 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<style> 
+				body {
+					margin:0; 
+					padding:0;
+					background-image: url('background1.jpg');
+					background-repeat: no-repeat; 
+					background-attachment: fixed; 
+					background-size: 100% 100%; 
+				}
+				
+				nav {
+					width: 100%;
+					background: #4682B4; 
+					overflow: auto;
+				}
+				
+				.menu ul{
+					list-style:none;
+					padding:0; 
+					margin:0 0 0 150px; 
+					text-align: right; 
+				}
+				
+				.menu li {
+					display: inline-block; 
+				}
+				
+				.logo img{
+					position: absolute; 
+					margin-top: 8px;
+					margin-left: 30px;
+				}
+				
+				nav a{
+					text-decoration: none; 
+					color: White; 
+					width: 90px; 
+					display: block;
+					padding: 20px 15px; 
+					text-transform: uppercase; 
+					font-weight: bold;
+					font-family: Arial; 
+					text-align: center;
+					font-size: 14px; 
+				}
+				
+				nav a:hover {
+					background: #ADD8E6; 
+					color: Black; 
+					transition: 0.6s; 
+				}
+				
+				.biography {
+					height: 100vh; 
+					display: flex; 
+					align-items: center; 
+					padding: 0 10%;
+				} 
+				
+				.biography-content {
+					max-width: 600px; }
+				
+				.biography-content h1 {
+					font-family: baskerville, serif, bold; 
+					text-transform: uppercase; 
+					letter-spacing: 10px;
+					font-size:45px; 
+					font-weight: 700; 
+				 }
+				
+				.biography-content h2 {
+					font-family: baskerville, serif, bold; 
+					text-transform: uppercase; 
+					letter-spacing: 5px;
+					font-size: 30px; 
+					font-weight: 700;
+				}
+				
+				bullet p{
+					font-family: baskerville, serif;
+					font-size: 18x;
+					margin-top: 1px;
+					padding-top: 2px; }
+					
+				.bullet{
+					font-family: baskerville, serif;
+					font-size:18px;
+					margin-top: 1px;
+					padding-top: 2px; }
+				
+				.images {
+					width: 45%; 
+					height: 80%; 
+					position: absolute; 
+					bottom: 0; 
+					right: 0;
+				}
+				
+				.images img {
+					height:100%; 
+					position: absolute; 
+					left: 50%;
+					bottom: 0;
+					transform: translateX(-50%); 
+					transition: bottom 1s, left 1s; 
+				}
+				
+				.images:hover  .back {
+					bottom:40px; 
+				}
+				
+				.images:hover .girl {
+					left:45%; 
+				}
+				
+				
+		</style>
+		<title> Biography </title>
+	</head>
+	<body style="background-image: url('background1.jpg');">
+	<div class ="logo"><a href ="index.html"><img src="image/logo3.png" height="40" width="150" alt="logo"></a>
+	</div>
+	<nav>
+		<div class="menu">
+		<ul>
+			<li><a href="index.html">Home </a></li>
+			<li><a href="biography.html">Biography </a></li>
+			<li><a href="resume.html">Resume </a></li>
+			<li><a href="galleries.html">Galleries </a></li>
+			<li><a href="time table.html">Time Table </a></li>
+		</ul>
+		</div>
+	</nav>
+	<section class="biography">
+		<div class="biography-content"> 
+			<h1> Biography </h1>
+			<h2> About Me </h2> 
+			<p class="bullet"> Nurul Izzah binti Mohd Shamsor. I was born in Selangor and raised in Perak.
+				I was born on 24th January 2001 and i am officially 22 years old this year. I have
+				five (5) family members; ayah, ibu, younger sister, younger brother and me. I am the eldest among
+				my siblings. </p>
+			<h2> Interest </h2>
+			<p class="bullet"> I have a few interest and hobbies that i love to do. These are my hobbies: </p>
+			<ul class="bullet">
+				<li>Reading novels</li>
+				<li>Crocheting</li>
+				<li>Listening to music</li>
+				<li>Playing online games:</li>
+					<ul>
+						<li>Genshin Impact</li>
+						<li>Honkai Star Rail</li>
+						<li>Mobile Legends</li>
+					</ul>
+			</ul>
+			<div class="images">
+				<img src="image/back2.png" class="back">
+				<img src="image/izzah2.png" class="girl">
+			</div> 
+		</div>
+	</body>
+</html> 

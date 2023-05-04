@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<style> 
+				*{
+					margin:0; 
+					padding:0; 
+					box-sizing: border-box; }
+					
+				body {
+					display: flex; 
+					justify-content: center; 
+					align-items: center;
+					min-height: 100vh; 
+					font-family: Verdana;
+					background-image: url('background5.jfif');
+					background-repeat: no-repeat; 
+					background-attachment: fixed; 
+					background-size: 100% 100%; 
+					}
+				
+				.Container {
+					max-width: 700px; 
+					padding: 28px; 
+					margin: 0 28px; 
+					border-radius: 10px; 
+					overflow: hidden;
+					backdrop-filter: blur(15px);
+					box-shadow: 0 15px 20px MidnightBlue; }
+				
+				h2 {
+					font-size: 25px; 
+					font-weight: bold; 
+					text-align:left; 
+					padding-bottom: 8px;
+					color: white; 
+					border-bottom: 1px solid silver; 
+				}
+				
+				.content{
+					display: flex; 
+					flex-wrap: wrap; 
+					justify-content: space-between; 
+					padding: 20px 0; 
+					font-size: 15px; 
+					color: white; 
+				}
+				
+				.input-box {
+					display-flex; 
+					flex-wrap: wrap;
+					width:50%; 
+					padding-bottom: 15px; }
+					
+				.input-box:nth-child(2n) {
+					justify-content: end; }
+				
+				.input-box label, .gender-title, .educational{
+					width: 95%; 
+					font-weight: bold; 
+					margin 5px 0; }
+					
+				.input-box input {
+					height: 40px; 
+					width: 95%; 
+					padding: 0 10px; 
+					border-radius: 5px; 
+					border: 1px solid #ccc; 
+					outline: none; 
+				}
+				
+				.input-box input:is(:focus, :valid){
+					bow-shadow: 0 3px 6px black; 
+				}
+				
+				.gender-category {
+					color: LavenderBlush; }
+					
+				.gender-category label {
+					padding: 0 20px 0 5px; 
+					font-size: 14px; 
+				}
+				
+				.gender-category label, gender-category input {
+					cursor: pointer; }
+					
+				.educational-category {
+					color: LavenderBlush; }
+					
+				.educational-category label {
+					padding: 0 20px 0 5px; 
+					font-size: 14px; 
+				}
+				
+				.educational-category label, educational-category input {
+					cursor: pointer; }
+				
+				.alert p {
+					font-size: 14px; 
+					font-style: italic; 
+					color:white; 
+					margin: 5px 0;
+					padding: 10px;
+				}
+				
+				.button-container {
+					margin 15px 0; }
+				
+				.button-container button {
+					width: 100%; 
+					margin-top:10px; 
+					padding: 10px; 
+					display: block; 
+					font-size: 20px; 
+					color: white; 
+					text-decoration: none;
+					border: none; 
+					border-radius: 5px; 
+					background-image: linear-gradient(to right, #aa076b, #61045f); 
+				}
+				
+				.button-container a{
+					text-decoration: none;
+					color: White;}
+				
+				.button-container button:hover {
+					background-image: linear-gradient(to right, #aa076b, #61045f); }
+				
+				@media (max-width:600px){
+					.container{
+						min-width:280px; }
+					
+					.content{
+						max-height: 380px; 
+						overflow: auto; }
+						
+					.input-box{ 
+						margin-bottom: 12px; 
+						width: 100%; }
+						
+					.input-box:nth-child(2n) {
+						justify-content: space-between; }
+					
+					.gender-category{
+						display: flex; 
+						justify-content: space-between; 
+						width: 60%; }
+						
+		</style>
+		<title> Sign Up </title>
+		
+	</head>
+	
+	<body style="background-color: LightCyan">
+	<div class="Container">
+		<form action="" method="post">
+			<h2> Registration</h2>
+			<div class="content">
+				<div class="input-box">
+					<label for="name"> First Name</label>
+					<input type="text" placeholder="Enter first name">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Last Name</label>
+					<input type="text" placeholder="Enter last name">
+				</div>
+				
+				<span class="gender-title">Gender</span>
+				<div class="gender-category">
+					<input type="radio" name="gender" id="male">
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="female">
+					<label for="female">Female</label>
+				</div>
+				
+				<div class="input-box">
+					<label for="name">Address 1</label>
+					<input type="text" placeholder="Enter address 1">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Address 2</label>
+					<input type="text" placeholder="Enter address 2">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> City</label>
+					<input type="text" placeholder="Enter city">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> State</label>
+					<input type="text" placeholder="Enter state">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Phone Number</label>
+					<input type="text" placeholder="Enter phone number">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Email Address </label>
+					<input type="text" placeholder="Enter email address">
+				</div>
+				
+				<span class="educational">Educational Background</span>
+				<div class="educational-category">
+					<input type="radio" name="SPM" id="SPM">
+					<label for="SPM">SPM</label>
+					<input type="radio" name="Diploma" id="diploma">
+					<label for="diploma">Diploma</label>
+					<input type="radio" name="matriculation" id="matriculation">
+					<label for="matriculation">Matriculation</label>
+					<input type="radio" name="foundation" id="foundation">
+					<label for="foundation">Foundation</label><br>
+					<input type="radio" name="form6" id="form6">
+					<label for="form6">Form 6</label>
+					<input type="radio" name="degree" id="degree">
+					<label for="degree">Degree</label>
+					<input type="radio" name="master" id="master">
+					<label for="master">Master</label>
+					<input type="radio" name="phd" id="phd">
+					<label for="phd">PhD</label>
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Username</label>
+					<input type="text" placeholder="Enter username">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Password</label>
+					<input type="text" placeholder="Enter password">
+				</div>
+				
+				<div class="input-box">
+					<label for="name"> Re-enter Password</label>
+					<input type="text" placeholder="Enter full name">
+				</div>
+			</div>
+			<div class="alert">
+				<p> By clicking sign up, you agreed to our Terms, Privacy Policy and Cookies Policy.
+				You may receive SMS notifications from us and can opt out at any time. </p>
+			</div>
+			
+			<div class="button-container">
+				<button> Sign Up </button>
+				<button> Cancel </button>
+				<button><a href="index.html">Back</a></button>
+			</div>
+	</div>
+	</body>
+</html> 
